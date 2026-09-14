@@ -1745,3 +1745,98 @@ select:focus-visible {
   }
 
 }
+
+/* =========================================================
+   18. GALLERY
+   ========================================================= */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(3, 1fr);
+  gap: 24px;
+}
+
+
+.gallery-item {
+  margin: 0;
+}
+
+
+.gallery-item-large {
+  grid-column: span 2;
+}
+
+
+.gallery-placeholder {
+  min-height: 360px;
+}
+
+
+.gallery-item-large .gallery-placeholder {
+  min-height: 500px;
+}
+
+
+.gallery-item figcaption {
+  margin-top: 12px;
+
+  color: var(--text-soft);
+
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+
+.section-dark .gallery-item figcaption {
+  color: var(--text-light-soft);
+}
+
+
+.gallery-grid-documents {
+  grid-template-columns:
+    repeat(4, 1fr);
+}
+
+
+.gallery-document {
+  min-height: 420px;
+}
+
+
+@media (max-width: 900px) {
+
+  .gallery-grid,
+  .gallery-grid-documents {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .gallery-item-large {
+    grid-column: span 2;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .gallery-grid,
+  .gallery-grid-documents {
+    grid-template-columns: 1fr;
+  }
+
+
+  .gallery-item-large {
+    grid-column: span 1;
+  }
+
+
+  .gallery-placeholder,
+  .gallery-item-large .gallery-placeholder,
+  .gallery-document {
+    min-height: 340px;
+  }
+
+}
