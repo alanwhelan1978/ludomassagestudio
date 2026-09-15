@@ -9,40 +9,49 @@
    ========================================================= */
 
 :root {
-  --bg: #f4f1ea;
-  --bg-soft: #ebe6dc;
+  /* Main backgrounds */
+  --bg: #f3f7f7;
+  --bg-soft: #e5eeee;
   --surface: #ffffff;
-  --surface-dark: #1e1f1c;
-  --surface-dark-soft: #292a26;
 
-  --text: #20211e;
-  --text-soft: #66685f;
-  --text-light: #f7f5ef;
-  --text-light-soft: #c9c7bf;
+  /* Dark sections */
+  --surface-dark: #102a36;
+  --surface-dark-soft: #193b47;
 
-  --accent: #9b7653;
-  --accent-dark: #76583f;
-  --accent-light: #d8c1aa;
+  /* Text */
+  --text: #17282f;
+  --text-soft: #607177;
+  --text-light: #f7fbfb;
+  --text-light-soft: #c5d4d7;
 
-  --border: rgba(32, 33, 30, 0.12);
-  --border-dark: rgba(255, 255, 255, 0.12);
+  /* Brand accent */
+  --accent: #397786;
+  --accent-dark: #285b68;
+  --accent-light: #8ab9c2;
 
+  /* Borders */
+  --border: rgba(23, 40, 47, 0.12);
+  --border-dark: rgba(255, 255, 255, 0.14);
+
+  /* Shadows */
   --shadow-sm:
-    0 8px 24px rgba(0, 0, 0, 0.06);
+    0 8px 24px rgba(16, 42, 54, 0.07);
 
   --shadow-md:
-    0 18px 50px rgba(0, 0, 0, 0.10);
+    0 18px 50px rgba(16, 42, 54, 0.12);
 
+  /* Shape */
   --radius-sm: 10px;
   --radius-md: 18px;
   --radius-lg: 28px;
 
+  /* Layout */
   --container: 1180px;
 
+  /* Animation */
   --transition:
     0.25s ease;
 }
-
 
 *,
 *::before,
